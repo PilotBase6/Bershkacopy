@@ -1,6 +1,6 @@
 
 
-function App() {
+function AppTeen() {
 
     return (
       <>
@@ -9,4 +9,4 @@ function App() {
     )
   }
   
-  export default App
+  export default AppTeen

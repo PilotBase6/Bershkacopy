@@ -25,7 +25,12 @@ export default {
       },
       backgroundPosition: {
         "top-4":"center top 25%",
-      }
+      },       
+      fontFamily:{
+        "Whyte":['Whyte', "sans-serif"],
+        "BlinkMacSystemFont":["BlinkMacSystemFont", "sans-serif"],
+        "apple-system":["apple-system", "sans-serif"]
+      },
     },
   },
   plugins: [],

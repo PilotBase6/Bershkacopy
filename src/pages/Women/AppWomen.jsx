@@ -1,12 +1,15 @@
+import Header from "../../sections/header"
+import Colection from "../../components/colection"
 
-
-function App() {
+function AppWomen() {
 
     return (
       <>
+      <Header/>
+      <Colection/>
    
       </>
     )
   }
   
-  export default App
+  export default AppWomen

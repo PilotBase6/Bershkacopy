@@ -5,6 +5,7 @@ import './src/index.css'
 
 ReactDOM.createRoot(document.getElementById('rootwomen')).render(
   <React.StrictMode>
-    <AppWomen />
+    
+      <AppWomen />
   </React.StrictMode>,
 )

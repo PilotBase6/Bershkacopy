@@ -5,7 +5,7 @@ export default function Header() {
 
 
   return (
-    <header className="relative h-auto">
+    <header className="relative w-full h-auto ">
       <Banner/>  
       <NavBar/>
     </header>

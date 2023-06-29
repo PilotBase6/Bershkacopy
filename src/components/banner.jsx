@@ -26,7 +26,7 @@ export default function Banner() {
           loop
         ></video>
         <div className=" h-full flex justify-center items-center bg-transparent">
-          <h1 className="z-[999] bg-transparent text-center">
+          <h1 className="z-[500] bg-transparent text-center">
             <span className="uppercase text-white text-center font-bold text-[15vw] xl:text-[6vw]">
               sale
             </span>

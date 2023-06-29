@@ -13,14 +13,15 @@ export default function AccordionMenu ({menuItems}) {
   };
 
   return (
-    <ul className="w-full">
+    <ul className="w-full xl:grid xl:grid-cols-3 ">
       {menuItems.map((item, index) => (
         <li
           key={index}
-          className={`border-gray-200  mb-1 ${index === menuItems.length-1?"border-y-[1px]":"border-t-[1px]" }`}
+          className={`xs:border-gray-200  mb-1 xl:px-3 ${index === menuItems.length-1?"xs:border-y-[1px]":"xs:border-t-[1px]" }`}
         >
+          <span className="xs:hidden text-sm font-Whyte font-semibold xl:px-3">{item.title}</span>
           <div
-            className="flex items-center justify-between p-3 cursor-pointer"
+            className="xl:hidden flex items-center justify-between p-3 cursor-pointer"
             onClick={() => handleClick(index)}
           >
             <span>{item.title}</span>
@@ -40,12 +41,17 @@ export default function AccordionMenu ({menuItems}) {
             </svg>
           </div>
           {activeIndex === index && (
-          <ul className="p-3">
+          <ul className="xl:hidden p-3">
               {item.content.map((subItem, subIndex) => (
                 <li key={subIndex} className="py-3">{subItem}</li>
               ))}
             </ul>
           )}
+            <ul className="xs:hidden p-3">
+              {item.content.map((subItem, subIndex) => (
+                <li key={subIndex} className="py-3 font-Whyte text-xs text-left">{subItem}</li>
+              ))}
+            </ul>
         </li>
       ))}
     </ul>

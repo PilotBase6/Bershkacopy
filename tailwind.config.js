@@ -31,8 +31,8 @@ export default {
         "BlinkMacSystemFont":["BlinkMacSystemFont", "sans-serif"],
         "apple-system":["apple-system", "sans-serif"]
       },
-    },
   },
   plugins: [],
 }
 
+}
